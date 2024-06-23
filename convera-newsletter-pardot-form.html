@@ -1,0 +1,406 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<meta name="description" content=""/>
+		<title>Subscribe for the latest currency and FX News</title>
+		<html lang="en-US">
+		<link rel="stylesheet" href="https://convera.com/wp-content/plugins/all-bootstrap-blocks/assets/css/bootstrap.min.css" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://convera.com/wp-content/themes/convera/assets/css/pardot.min.css" crossorigin="anonymous">
+		<script src="https://www.google.com/recaptcha/api.js?hl=en"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.2.11/iframeResizer.contentWindow.min.js" defer=""></script>	
+    	<style type="text/css">
+    	@import url('https://fonts.googleapis.com/css?family=Montserrat');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+        
+       body {
+            background-color: transparent;
+            margin-left: -10px;
+	        font-family: Montserrat, sans-serif; 
+            color: #001E37;
+            }
+            
+            h2 {
+            	font-size: 32px; 	
+            	font-weight: 500;	
+            }
+            
+            p {
+            	font-size:1rem;
+            	line-height: 1.5;
+            	font-weight:500;
+            }
+            
+            .color-navy {
+            	color:#001E37;
+            }
+            
+            .color-darkiris{
+            	color:#433896;
+            }
+            
+            .color-oasis {
+            	color:#005766;
+            }
+            
+            .text-center {
+            	text-align: center;
+            }
+            
+            .font-size-1 {
+            	font-size: 12px !important;
+            }
+            .pt-small {
+                padding-top: 5px;
+            }
+        
+        .grecaptcha-badge { 
+            visibility: hidden; 
+        }
+      
+      form.form p.pd-text label, p.pd-select label, p.pd-textarea label {display:none !important;}
+      
+      form.form span.value {margin-left:0 !important;}
+        
+    	form.form input.text, form.form textarea.standard, form.form select, form.form input.date { 
+    		display:block;
+    		width:100%;
+    		padding:.375rem 0rem;
+    		font-size:1rem;
+    		line-height:1.5;
+    		color:#001E37 ;
+    		background-color:#fff;
+    		background-clip:padding-box;
+    		border: 1px solid;
+            border-color: #778795;		
+            font-family: 'Montserrat';
+    		border-radius:2px;
+    		transition:border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    		}
+    		form.form input.text, form.form textarea.standard, form.form select, form.form input.date::focus {
+    		    border-color:#757575;
+    		}
+    		label.field-label.col-form-label {
+    		  font-size: 16px;
+              color: #001E37;
+              font-weight: normal;
+              padding-top: 5px;
+              padding-bottom: 5px;
+              float: none;
+              text-align: left;
+              width: auto;
+              display: block;
+              font-family: 'Montserrat';
+            }
+            input .btn .submit {
+                font-weight: 700;
+                font-family: Montserrat;
+                line-height: 1.5; 
+                color: #001e37; 
+                text-align: center; 
+                vertical-align: middle; 
+                cursor: pointer; 
+                user-select: none; 
+                background-color: #00c7b3; 
+                border-color: #00c7b3; 
+                padding: 0.625rem 1.25rem; 
+                font-size: 1rem; 
+                border-radius: 30px; 
+                transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+            }
+    		
+    	#pardot-form span.description{
+        width: 40%;
+        display: inline-block;
+        vertical-align: top;
+        line-height: 1.2;
+    
+    }	
+    .rwd-line { 
+        display: block;
+        width:100%;
+    	font-size:1rem;
+    	line-height:1.5;
+    }
+            
+    @media screen and (min-width: 768px){
+    .rwd-line { 
+        display: block;
+        width:100%;
+    	font-size:1rem;
+    	line-height:1.5;
+        }
+    }
+    /* hide the regular radio button */
+.pd-radio input {
+    opacity: 0;
+    position: absolute;   
+}
+
+/* position the label */
+.pd-radio input, .pd-radio label {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 5px;
+    cursor: pointer;
+}
+.pd-radio label {
+    position: relative;
+    font-size: 0.85rem;
+    color: #001E37;
+}
+/* style the unchecked radio button */
+.pd-radio input + label:before {
+    content: '';
+    background:white;
+    border: 1px solid#001e37;
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    padding: 0px;
+    margin-right: 5px;
+    text-align: left;
+    font-size: 14px;
+    line-height: normal;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+.pd-radio input + label:before {
+    border-radius: 50%;
+}
+/* style the selected radio button */
+.pd-radio input:checked + label:before {
+    content: "\25CF";
+    background:#00c7b3;
+    color:white;
+    border-color:#00c7b3;
+}  
+       
+    </style>
+	<script type="text/javascript" src="https://go.convera.com/js/piUtils.js?ver=2021-09-20"></script><script type="text/javascript">
+piAId = '1012991';
+piCId = '263815';
+piHostname = 'go.convera.com';
+if(!window['pi']) { window['pi'] = {}; } pi = window['pi']; if(!pi['tracker']) { pi['tracker'] = {}; } pi.tracker.pi_form = true;
+(function() {
+	function async_load(){
+		var s = document.createElement('script'); s.type = 'text/javascript';
+		s.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + piHostname + '/pd.js';
+		var c = document.getElementsByTagName('script')[0]; c.parentNode.insertBefore(s, c);
+	}
+	if(window.attachEvent) { window.attachEvent('onload', async_load); }
+	else { window.addEventListener('load', async_load, false); }
+})();
+</script></head>
+	<body>
+	    <main>
+<div class="container-fluid">
+    <form accept-charset="UTF-8" method="post" action="https://go.convera.com/l/1011991/2023-07-24/7kfprj" class="form" id="pardot-form">
+
+<style type="text/css">
+form.form p label { color: #000000; }
+</style>
+
+
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.2.11/iframeResizer.contentWindow.min.js" defer></script>
+<h2>Subscribe for the latest currency and FX News</h2>
+
+		
+		
+
+				<div class="col-s-12 col-m-12 col-l-10 form-field  email pd-text required    ">
+					
+						<label class="field-label col-form-label" for="1011991_142758pi_1011991_142758">Email</label>
+					
+					<input type="text" name="1011991_142758pi_1011991_142758" id="1011991_142758pi_1011991_142758" value="" class="text" size="30" maxlength="255" onchange="" onfocus="" />
+					
+				
+				<div id="error_for_1011991_142758pi_1011991_142758" style="display:none"></div>
+				
+				</div>
+			
+				<div class="col-s-12 col-m-12 col-l-10 form-field Currency-Update-Subscription-List Region_Subscription pd-radio required    ">
+					
+						<label class="field-label col-form-label" for="1011991_142782pi_1011991_142782">Region</label>
+					
+					<span class="value"><span class="" style=""><input type="radio" name="1011991_142782pi_1011991_142782[]" id="1011991_142782pi_1011991_142782_757569_757569" value="757569" onchange="" /><label class="inline" for="1011991_142782pi_1011991_142782_757569_757569">North America</label></span><span class="" style=""><input type="radio" name="1011991_142782pi_1011991_142782[]" id="1011991_142782pi_1011991_142782_757572_757572" value="757572" onchange="" /><label class="inline" for="1011991_142782pi_1011991_142782_757572_757572">Europe</label></span><span class="" style=""><input type="radio" name="1011991_142782pi_1011991_142782[]" id="1011991_142782pi_1011991_142782_757575_757575" value="757575" onchange="" /><label class="inline" for="1011991_142782pi_1011991_142782_757575_757575">Asia Pacific</label></span></span>
+					
+				
+				<div id="error_for_1011991_142782pi_1011991_142782" style="display:none"></div>
+				
+				</div>
+			
+				<div class="col-s-12 col-m-12 col-l-10 form-field  Site_ID pd-hidden  hidden   ">
+					
+					<input type="hidden" name="1011991_142761pi_1011991_142761" id="1011991_142761pi_1011991_142761" value="en-US" />
+					
+				
+				<div id="error_for_1011991_142761pi_1011991_142761" style="display:none"></div>
+				
+				</div>
+			
+				<div class="col-s-12 col-m-12 col-l-10 form-field  UTM_Campaign pd-hidden  hidden   ">
+					
+					<input type="hidden" name="1011991_142764pi_1011991_142764" id="1011991_142764pi_1011991_142764" value="" />
+					
+				
+				<div id="error_for_1011991_142764pi_1011991_142764" style="display:none"></div>
+				
+				</div>
+			
+				<div class="col-s-12 col-m-12 col-l-10 form-field  UTM_Source pd-hidden  hidden   ">
+					
+					<input type="hidden" name="1011991_142767pi_1011991_142767" id="1011991_142767pi_1011991_142767" value="" />
+					
+				
+				<div id="error_for_1011991_142767pi_1011991_142767" style="display:none"></div>
+				
+				</div>
+			
+				<div class="col-s-12 col-m-12 col-l-10 form-field  UTM_Medium pd-hidden  hidden   ">
+					
+					<input type="hidden" name="1011991_142770pi_1011991_142770" id="1011991_142770pi_1011991_142770" value="" />
+					
+				
+				<div id="error_for_1011991_142770pi_1011991_142770" style="display:none"></div>
+				
+				</div>
+			
+				<div class="col-s-12 col-m-12 col-l-10 form-field  UTM_Content pd-hidden  hidden   ">
+					
+					<input type="hidden" name="1011991_142773pi_1011991_142773" id="1011991_142773pi_1011991_142773" value="" />
+					
+				
+				<div id="error_for_1011991_142773pi_1011991_142773" style="display:none"></div>
+				
+				</div>
+			
+				<div class="col-s-12 col-m-12 col-l-10 form-field  UTM_Term pd-hidden  hidden   ">
+					
+					<input type="hidden" name="1011991_142776pi_1011991_142776" id="1011991_142776pi_1011991_142776" value="" />
+					
+				
+				<div id="error_for_1011991_142776pi_1011991_142776" style="display:none"></div>
+				
+				</div>
+			
+				<div class="col-s-12 col-m-12 col-l-10 form-field  UTM_Partner pd-hidden  hidden   ">
+					
+					<input type="hidden" name="1011991_142779pi_1011991_142779" id="1011991_142779pi_1011991_142779" value="" />
+					
+				
+				<div id="error_for_1011991_142779pi_1011991_142779" style="display:none"></div>
+				
+				</div>
+			
+		
+		<div class="form-row align-items-left" style="padding-top: 10px;">
+		    <div class="consent-submit-privacy rwd-line col-s-12 col-m-12 col-l-10 font-size-1">By submitting this form, you acknowledge having read Convera’s <a style="color: #001e37; text-decoration: underline" href="https://www.convera.com/docs/privacy/">Privacy Statement</a>. You can withdraw your consent anytime.</div>
+			<div class="consent-submit-recaptcha rwd-line col-s-12 col-m-12 col-l-10 pt-small font-size-1">This site is protected by reCAPTCHA and the Google <a style="color: #001e37; text-decoration: underline" href="https://policies.google.com/privacy">Privacy Policy</a> and <a style="color: #001e37; text-decoration: underline" href="https://policies.google.com/terms">Terms of Service</a> apply.</div>
+		</div>
+			
+	<p style="position:absolute; width:190px; left:-9999px; top: -9999px;visibility:hidden;">
+		<label for="pi_extra_field">Comments</label>
+		<input type="text" name="pi_extra_field" id="pi_extra_field"/>
+	</p>
+		
+			
+			<div class="form-row align-items-left">
+			    <!-- forces IE5-8 to correctly submit UTF8 content  -->
+			    <input name="_utf8" type="hidden" value="&#9731;" />
+		        <div class="col-auto form-field pt-3 mx-auto">
+				    <input type="submit" class="g-recaptcha btn mt-3 submit" style="font-family: Montserrat; font-weight: 700; line-height: 1.5; color: #001e37; text-align: center; vertical-align: middle; cursor: pointer; user-select: none; background-color: #00c7b3; border-color: #00c7b3; padding: 0.625rem 1.25rem; font-size: 1rem; border-radius: 30px; transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;" accesskey="s" data-sitekey="6LfzqRklAAAAAEydwjOQLA0d_FpkkrvukkBzu635" data-callback='onSubmit' data-action='submit' value="Submit" />
+			</div>
+			</div>
+
+
+		
+		
+	
+	    <script type="text/javascript">
+        var form = document.getElementById('pardot-form');
+        function onSubmit() {
+            if(form.checkValidity()) form.submit();
+            form.classList.add('was-validated');
+        }
+    </script>
+	<script type="text/javascript">
+//<![CDATA[
+
+	var anchors = document.getElementsByTagName("a");
+	for (var i=0; i<anchors.length; i++) {
+		var anchor = anchors[i];
+		if(anchor.getAttribute("href")&&!anchor.getAttribute("target")) {
+			anchor.target = "_top";
+		}
+	}
+		
+//]]>
+</script>
+    <script type="text/javascript">
+    //<![CDATA[
+    
+    	var anchors = document.getElementsByTagName("a");
+    	for (var i=0; i<anchors.length; i++) {
+    		var anchor = anchors[i];
+    		if(anchor.getAttribute("href")&&!anchor.getAttribute("target")) {
+    			anchor.target = "_top";
+    		}
+    	}
+    		
+    //]]>
+    </script>
+   <!-- For translating the form --><script type="text/javascript" src="https://convera.com/wp-content/themes/convera/pardot/translation.js"></script>
+<input type="hidden" name="hiddenDependentFields" id="hiddenDependentFields" value="" /></form>
+<script type="text/javascript">
+    (function(){ pardot.$(document).ready(function(){ (function() {
+	    var $ = window.pardot.$;
+	    window.pardot.FormDependencyMap = [];
+
+	    $('.form-field-primary input, .form-field-primary select').each(function(index, input) {
+		$(input).on('change', window.piAjax.checkForDependentField);
+		window.piAjax.checkForDependentField.call(input);
+	  });
+})(); });})();
+</script>
+<script>
+var labels = document.querySelectorAll("p.pd-text label, p.pd-select label, p.pd-textarea label");
+var i = labels.length;
+while (i--) {
+var label = labels.item(i);
+var text = label.textContent;
+label.parentNode.classList.contains("required") && (text += " *");
+var nextElement = label.nextElementSibling;
+if (nextElement) {
+if (nextElement.tagName == 'SELECT') {
+nextElement.options[0].text = text;
+} else {
+nextElement.setAttribute("placeholder", text);
+}
+label.parentNode.removeChild(label);
+}
+}
+</script><script type="text/javascript">(function(){ pardot.$(document).ready(function(){ (function() {
+	var $ = window.pardot.$;
+	window.pardot.FormDependencyMap = [];
+
+	$('.form-field-primary input, .form-field-primary select').each(function(index, input) {
+		$(input).on('change', window.piAjax.checkForDependentField);
+		window.piAjax.checkForDependentField.call(input);
+	});
+})(); });})();</script>
+</div></main>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
